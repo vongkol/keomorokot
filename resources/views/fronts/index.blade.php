@@ -153,7 +153,7 @@
             </div>
         </div>
     </div>
-    <div class="container my-4">
+    <!-- <div class="container my-4">
         <div class="col-md-12">
             <div class="row">
                <i class="far fa-newspaper news-icon"></i></i>&nbsp;&nbsp;<h6> NEWS</h6>
@@ -161,8 +161,8 @@
         </div>
         <aside class="text-partner text-gray"> CONSTRUCTION AND PROPERTY</aside> 
         <div class="in-icon"></div>  
-    </div>
-        <div class="news">
+    </div> -->
+        <!-- <div class="news">
             <div class="container">
                 <div class="row my-4">
                     <div class="col-md-6 my-4">
@@ -208,8 +208,8 @@
                 
            </div>
         </div>
-    </div>
-    <div class="container my-4">
+    </div> -->
+    <!-- <div class="container my-4">
          <div class="col-md-12">
             <div class="row">
                <i class="fab fa-youtube news-icon" style="color:#D50000;"></i></i>&nbsp;&nbsp;<h6> VIDEOS</h6>
@@ -217,8 +217,8 @@
         </div>
         <aside class="text-partner text-gray"> CONSTRUCTION AND PROPERTY</aside> 
         <div class="in-icon"></div>  
-    </div>
-     <div class="news">
+    </div> -->
+     <!-- <div class="news">
         <div class="container">
         <div class="row my-4">
            <div class="col-md-7 my-4">
@@ -285,7 +285,7 @@
             </div>
            </div>
        </div>
-    </div>
+    </div> -->
     <div class="container-fluit our-service">
         <div class="row">
             <div class="col-md-12 text-center text-gray">
@@ -364,7 +364,7 @@
               </div>
              </div>
     <p></p>
-    <div class="container">
+    <!-- <div class="container">
          <div class="col-md-12">
             <div class="row">
                 <i class="fa fa-building building-icon"></i>&nbsp;&nbsp;<h6> RECENT PROJECTS</h6>
@@ -372,8 +372,8 @@
         </div>
         <aside class="text-partner text-gray"> NO PROJECT IS TOO LARGE FOR US TO MANAGE</aside> 
         <div class="in-icon"></div>   
-    </div>
-<?php $current_projects = DB::table('current_projects')->where('active',1)->orderBy('order')->get(); ?>
+    </div> -->
+<!-- <?php $current_projects = DB::table('current_projects')->where('active',1)->orderBy('order')->get(); ?>
     <div class="container-fluit my-4">
         <div class="slideshow-container">
             @foreach($current_projects as $cp)
@@ -389,7 +389,7 @@
             <span class="dot" onclick="currentSlide(<?php echo $d++;?>)"><img src="{{asset('uploads/current_projects/icon/'.$cp->photo)}}" width="80"></span> 
             @endforeach
         </div>
-    </div>
+    </div>   -->
     <div class="container">
         <div class="col-md-12">
             <div class="row">
@@ -417,7 +417,7 @@
         </div>
     </div>
                                 
-    <div class="container">
+    <!-- <div class="container">
         <div class="col-md-12">
             <div class="row">
                 <i class="fa fa-map-marker location-icon"></i>&nbsp;&nbsp;<h6> CONSTRUCTION PROJECT'S LOCATION</h6>
@@ -439,7 +439,7 @@
         </div>
         <div id="map" class="map"></div>
        
-    </div>
+    </div> -->
 @endsection
 @section('js')
 <script>
@@ -455,83 +455,7 @@
         $("#vdo").attr('src', url);
         $(vid).css('background', '#ccc');
     }
-    // load project location by region
-    function getLocation(obj, evt)
-    {
-        evt.preventDefault();
-        var id = $(obj).attr('data-id');
 
-        var options = {
-            zoom: 18,
-            center: {lat: 11.531728, lng: 104.928847}
-        };
-        var map = new google.maps.Map(document.getElementById('map'), options);
-        var geocoder = new google.maps.Geocoder;
-        
-        $.ajax({
-            type: "GET",
-            url: burl + "/location/get/" + id,
-            success: function(data)
-            {
-                $(".my-pill>li>a").removeAttr('class');
-               data.forEach(function(item){
-                geocodeAddress(geocoder, item.title, map, "{{asset('uploads/locations/')}}/" + item.icon, item.address);
-               });
-               $(obj).attr('class', 'active');
-            }
-        });
-    }
-    function initMap()
-    {
-        var options = {
-            zoom: 11,
-            center: {lat: 11.531728, lng: 104.928847}
-        };
-        var map = new google.maps.Map(document.getElementById('map'), options);
-        var geocoder = new google.maps.Geocoder;
-        
-        // marker for the company
-        @foreach($locations as $l)
-        
-            geocodeAddress(geocoder, "{{$l->title}}", map, "{{asset('uploads/locations/'.$l->icon)}}", "{{$l->address}}");
-
-        @endforeach
-    }
-
-    function geocodeAddress(geocoder, name, resultsMap, iconMarker, address) {
-            var ad="";
-            geocoder.geocode({'address': address}, function(results, status) {
-                if (status === 'OK') {
-                    if (results[0]) {
-                        ad = results[0].formatted_address;
-                        ////////////////////////////////////////
-                        var marker = new google.maps.Marker({
-                            map: resultsMap,
-                            position: results[0].geometry.location,
-                            icon: iconMarker
-                        });
-                        // mm = marker;
-                        var infoWindow = new google.maps.InfoWindow(
-                            {
-                                content: "<h4 style='text-align:center'>" + name + "</h4>" + "<p class='text-center'>" + ad + "</p>"
-                            }
-                        );
-                        marker.addListener('click', function(){
-                            infoWindow.open(resultsMap, marker);
-                        });
-
-                    } else {
-
-                        ad = "មិនមានអាស័យដ្ខានច្បាស់លាស់ទេ!";
-                    }
-                } else {
-
-                }
-
-            });
-
-        }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF7yMA8-_MxooFoPfVvzuLGsN-Ppa4uR8&callback=initMap">
+   
 </script>
 @endsection

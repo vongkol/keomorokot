@@ -22,7 +22,7 @@
     <body>
 
     <div class="container-fluit header-contact">
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
             <div class="row"> 
                 <div id="triangle-bottomleft"></div> 
                 <div class=" text-gray text-center rep-h-text">
@@ -39,7 +39,7 @@
                     
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -76,7 +76,7 @@
                             </li>
                         @endif
                     @endforeach
-                        </ul>
+                    </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a  href="#"><img src="{{asset('front/img/en.png')}}" alt="" width="25"></a>&nbsp;   
@@ -89,9 +89,9 @@
     </div>
     @yield('content')
     <?php $b = DB::table('background_images')->first();?>
-    <div class="container-fluit my-4">
+    <!-- <div class="container-fluit my-4">
         <img src="{{asset('uploads/backgrounds/'.$b->photo)}}" width="100%">
-    </div>
+    </div> -->
     <div class="container">
         <div class="partner">
             <div class="col-md-12">
@@ -266,7 +266,7 @@
             Send Message
         </a>
     </div>
-    <div class="box-float">
+    <!-- <div class="box-float">
         <a href="{{url('/page/7')}}">
             <img src="{{asset('img/s1.png')}}" alt="" class="img1">
         </a>
@@ -282,7 +282,7 @@
         <a href="{{url('/page/11')}}">
             <img src="{{asset('img/s5.png')}}" alt="" class="img5">
         </a>
-    </div>
+    </div> -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
