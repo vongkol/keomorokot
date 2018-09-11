@@ -6,14 +6,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-warning title-page my-4">
+                <h2 class="text-dark title-page my-4">
                     <b style="text-shadow:2px 3px 5px #fff;"><i class="fa fa-building"></i> {{$page->title}}</b>
           
                     </h2>
                     <div class="page-by-cat back">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="border-custom">
+                                <div class="border-custom text-center">
                                     <aside>{!!$page->description!!}</aside>
                                 </div>
                             </div>

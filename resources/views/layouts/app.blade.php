@@ -89,20 +89,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/admin/page')}}"><i class="fa fa-columns text-warning"></i> Pages</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/admin/post')}}"><i class="fa fa-th text-success"></i> Posts</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/slide')}}"><i class="fa fa-picture-o text-info text-info"></i> Slide Show</a>
                     </li>
                    
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/admin/video')}}"><i class="fa fa-youtube text-danger"></i> Video</a>
-                    </li>
+                    </li> -->
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/current-project')}}"><i class="fa fa-building text-success"></i> Current Project</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/partner')}}"><i class="fa fa-gift text-primary"></i> Partner </a>
                     </li>
@@ -112,21 +112,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/portfolio')}}"><i class="fa fa-picture-o text-info"></i> Portfolio </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/company-feature')}}"><i class="fa fa-bullhorn text-success"></i> Company Feature </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/fm')}}"><i class="fa fa-file text-primary text-primary"></i> File Manager </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/admin/project-location')}}"><i class="fa fa-map-marker text-danger"></i> Project Location</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/social')}}"><i class="fa fa-facebook text-info"></i> Social </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/background-image')}}"><i class="fa fa-image"></i> Background Image </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/admin/our-service')}}"><i class="fa fa-gear text-success"></i> Our Service </a>
                     </li>
