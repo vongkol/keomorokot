@@ -124,8 +124,7 @@
                 <div class="card card-inverse card-primary py-5 d-md-down-none" style="width:44%">
                     <div class="card-block text-center">
                         <div>
-                            <h2>ECC Building Trust</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="http://localhost:8000/front/img/logo.png" width="110"> <br>
                             <button type="button" class="btn btn-primary active mt-3">017 837 754</button>
                         </div>
                     </div>

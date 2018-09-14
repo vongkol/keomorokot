@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 12, 2018 at 12:33 AM
+-- Generation Time: Sep 14, 2018 at 08:31 PM
 -- Server version: 5.7.23-0ubuntu0.16.04.1
 -- PHP Version: 7.0.31-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -170,12 +170,12 @@ INSERT INTO `featured_works` (`id`, `title`, `short_description`, `description`,
 (9, 'Ministry Construction', 'Lorem ipsum dolor sit amet', '<p>test</p>', 'post9.jpg', 1, '2018-05-09 16:33:19'),
 (10, '45 Floor Project in Phnom Penh', 'Lorem ipsum dolor sit amet', '<p>Lorem ipsum dolor sit amet</p>', 'post10.jpg', 1, '2018-05-09 16:46:21'),
 (11, 'Some New Project in Province', 'Lorem ipsum dolor sit amet', '<h5><a href=\"http://localhost:8000/#\"><strong>Lorem ipsum dolor sit amet</strong></a></h5>', 'post11.jpg', 1, '2018-05-09 16:47:00'),
-(12, 'High Structured Bending Project', 'Lorem ipsum dolor sit amet', '<p>Lorem ipsum dolor sit amet</p>', 'post12.jpg', 1, '2018-05-09 16:48:33'),
+(12, 'High Structured Bending Project', 'Lorem ipsum dolor sit amet', '<p>Lorem ipsum dolor sit amet</p>', 'post12.jpeg', 1, '2018-05-09 16:48:33'),
 (13, '12 FLOORS PROJECT', 'Lorem ipsum dolor sit amet', '<p>test</p>', 'post13.jpg', 0, '2018-05-09 16:49:05'),
 (14, 'test 5', 'test', '<p>test</p>', 'post14.jpg', 0, '2018-05-09 16:49:25'),
 (15, 'Hello World', 'Test', '<p>Test</p>', 'post15.jpg', 0, '2018-05-27 13:04:14'),
 (16, 'Hello World Project', 'Some short description here', NULL, 'post16.jpg', 1, '2018-05-27 13:38:11'),
-(17, 'Hello Construction Project', 'Hello World!', '<p>Some description here...</p>', 'post17.jpg', 1, '2018-05-27 13:39:48');
+(17, 'Hello Construction Project', 'Hello World!', 'Some description here...', 'post17.jpg', 1, '2018-05-27 13:39:48');
 
 -- --------------------------------------------------------
 
@@ -202,11 +202,11 @@ INSERT INTO `main_menus` (`id`, `name`, `url`, `order_number`, `active`, `create
 (3, '123455555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555tghjkl;;kjhgfghjk;kjhgfh;kjhdghjkl;;hxcvbn/c;d kl;', NULL, NULL, 0, '2018-03-13 04:16:39'),
 (4, 'Hello WOrld', 'www.vdoo.biz', 8, 0, '2018-03-13 04:18:00'),
 (5, '11', NULL, 111, 0, '2018-03-13 04:22:10'),
-(6, 'Portfolio', '#', 3, 1, '2018-03-13 04:22:44'),
+(6, 'Portfolio', '#', 3, 0, '2018-03-13 04:22:44'),
 (7, 'Services', '#', 2, 1, '2018-03-13 04:23:23'),
 (8, 'Home', '/', 1, 1, '2018-03-13 04:43:06'),
-(9, 'Projects', '/category/13', 4, 0, '2018-05-09 11:45:16'),
-(10, 'Testimonials', '#', 5, 1, '2018-05-09 11:45:29'),
+(9, 'Projects', '/category/13', 4, 1, '2018-05-09 11:45:16'),
+(10, 'Testimonials', '#', 5, 0, '2018-05-09 11:45:29'),
 (11, 'Contact Us', 'page/2', 6, 1, '2018-05-09 11:45:54'),
 (12, 'About Us', 'page/1', 8, 1, '2018-05-09 11:46:02');
 
@@ -253,15 +253,15 @@ CREATE TABLE `pages` (
 INSERT INTO `pages` (`id`, `title`, `description`, `active`, `url`, `create_at`, `featured_image`) VALUES
 (1, 'About Us', '<p>About Us Description</p>', 1, '#', '2018-05-22 03:09:22', 'page1.jpg'),
 (2, 'Contact Us', '<p>Contuct Us Description</p>', 1, '#', '2018-05-22 03:13:38', 'page2.jpg'),
-(3, 'Construction Consulting', '<p>This is consulting page</p>', 1, '#', '2018-05-27 17:52:52', 'page3.jpg'),
-(4, 'Partnerships', '<p>Description here...</p>', 1, '#', '2018-05-29 13:14:57', 'page4.jpg'),
+(3, 'Construction Consulting', '<p>This is consulting page</p>', 1, '#', '2018-05-27 17:52:52', 'default.png'),
+(4, 'Partnerships', '<p>Description here...</p>', 1, '#', '2018-05-29 13:14:57', 'default.png'),
 (5, 'Terms of Use', '<p>Description here...</p>', 1, '#', '2018-05-29 13:15:11', 'default.png'),
 (6, 'Privacy Policy', '<p>Description Here...</p>', 1, '#', '2018-05-29 13:15:26', 'default.png'),
 (7, 'Appartment', '<p>Some description....</p>', 1, '#', '2018-06-08 08:04:26', 'default.png'),
 (8, 'Condo', '<p>Some descripition should be here...</p>', 1, '#', '2018-06-08 08:05:25', 'default.png'),
 (9, 'Hotel', '<p>some description for hotel service page</p>', 1, '#', '2018-06-08 08:06:06', 'default.png'),
 (10, 'Office Building', '<p>put your content here...</p>', 1, '#', '2018-06-08 08:07:38', 'default.png'),
-(11, 'Business Building', '<p>put description here..</p>', 1, '#', '2018-06-08 08:07:52', 'page11.jpg');
+(11, 'Business Building', '<p>put description here..</p>', 1, '#', '2018-06-08 08:07:52', 'default.png');
 
 -- --------------------------------------------------------
 
@@ -339,20 +339,14 @@ INSERT INTO `permissions` (`id`, `name`, `list`, `insert`, `update`, `delete`) V
 (4, 'Slideshow', 0, 0, 0, 0),
 (5, 'Page', 0, 0, 0, 0),
 (6, 'Featured Work', 0, 0, 0, 0),
-(7, 'Video', 0, 0, 0, 0),
-(8, 'Current Project', 0, 0, 0, 0),
+(30, 'Portfolio Category', 0, 0, 0, 0),
+(29, 'Post Category', 0, 0, 0, 0),
 (9, 'Advertisement', 0, 0, 0, 0),
-(10, 'Portfolio', 0, 0, 0, 0),
-(11, 'Company Feature', 0, 0, 0, 0),
 (13, 'Partner', 0, 0, 0, 0),
 (14, 'File Manager', 0, 0, 0, 0),
 (16, 'User', 0, 0, 0, 0),
 (17, 'Role', 0, 0, 0, 0),
-(18, 'Post Category', 0, 0, 0, 0),
-(25, 'Permission', 0, 0, 0, 0),
-(26, 'Social', 0, 0, 0, 0),
-(27, 'Portfolio Category', 0, 0, 0, 0),
-(28, 'Post', 0, 0, 0, 0);
+(26, 'Social', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -381,14 +375,13 @@ INSERT INTO `portfolios` (`id`, `name`, `photo`, `create_at`, `active`, `order`,
 (4, 'google', 'portfolios4.jpeg', '2018-05-21 07:34:51', 0, 1, 1),
 (5, 'test', 'portfolios5.jpeg', '2018-05-21 07:35:32', 0, 1, 1),
 (6, 'Hello World', 'portfolios6.jpg', '2018-05-27 12:49:08', 0, 3, 1),
-(7, 'Image 1', 'portfolios7.jpg', '2018-05-27 12:50:35', 1, 1, 1),
-(8, 'Image 2', 'portfolios8.jpg', '2018-05-27 12:53:51', 1, 2, 1),
-(9, 'Image 1', 'portfolios9.jpg', '2018-05-27 12:54:12', 1, 1, 1),
-(10, 'Image 2', 'portfolios10.jpg', '2018-05-27 12:54:28', 1, 2, 1),
-(11, 'Image 1', 'portfolios11.jpg', '2018-05-27 12:54:50', 1, 1, 1),
-(12, 'Image 2', 'portfolios12.jpg', '2018-05-27 12:55:10', 1, 2, 1),
-(13, 'Image 1', 'portfolios13.jpg', '2018-05-27 12:55:30', 1, 1, 1),
-(14, 'test', 'portfolios14.jpg', '2018-09-11 17:06:28', 1, 0, 1);
+(7, 'Image 1', 'portfolios7.png', '2018-05-27 12:50:35', 1, 1, 1),
+(8, 'Image 2', 'portfolios8.png', '2018-05-27 12:53:51', 1, 2, 1),
+(9, 'Image 1', 'portfolios9.jpg', '2018-05-27 12:54:12', 1, 1, 6),
+(10, 'Image 2', 'portfolios10.jpg', '2018-05-27 12:54:28', 1, 2, 6),
+(11, 'Image 1', 'portfolios11.png', '2018-05-27 12:54:50', 1, 1, 7),
+(12, 'Image 2', 'portfolios12.png', '2018-05-27 12:55:10', 1, 2, 7),
+(13, 'Image 1', 'portfolios13.png', '2018-05-27 12:55:30', 1, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -673,10 +666,10 @@ INSERT INTO `slides` (`id`, `name`, `photo`, `create_at`, `active`, `order`, `ur
 (4, 'Vdoo Solutions', 'dream_village_hd.jpg', '2018-02-11 03:36:38', 0, 0, NULL),
 (5, 'Vdoo Solutions', 'post-4.png', '2018-02-11 15:37:03', 0, 0, NULL),
 (6, 'EU Cycling tour', 'slide2.jpg', '2018-03-01 04:26:52', 0, 1, 'http://vdoo.biz/'),
-(7, 'EU Cycling tour EU Cycling tour EU Cycling tour EU Cycling tour', 'Executive-Search.jpg', '2018-03-01 04:27:04', 1, 2, '#'),
+(7, 'EU Cycling tour EU Cycling tour EU Cycling tour EU Cycling tour', 'slide1.jpg', '2018-03-01 04:27:04', 1, 2, '#'),
 (8, 'EU Cycling tour', 'slide9-min.png', '2018-03-01 04:47:39', 0, 3, NULL),
 (9, 'vichey', '4-min.png', '2018-03-13 16:46:01', 0, 0, '456789'),
-(10, 'Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me', 'Professional-Search.jpg', '2018-05-08 16:05:14', 1, 3, '#'),
+(10, 'Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me Hello Everyone I would to tell you about me', 'slide2.jpg', '2018-05-08 16:05:14', 1, 3, '#'),
 (11, 'EU Cycling tourEU Cycling tourEU Cycling tourEU Cycling tourEU Cycling tourEU Cycling tour', '1-min.png', '2018-05-09 18:27:13', 0, 0, NULL),
 (12, 'test', 'swDNLSxupk2p74uja.jpeg', '2018-05-19 12:20:59', 0, 1, 'https://www.facebook.com/');
 
@@ -1034,13 +1027,13 @@ ALTER TABLE `partners`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `portfolios`
 --
 ALTER TABLE `portfolios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `portfolio_categories`

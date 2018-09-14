@@ -11,7 +11,7 @@
     <meta name="author" content="vdoo.biz">
     <meta name="keyword" content="ngo, website ngo, company create website, website">
     <link rel="shortcut icon" href="img/favicon.png">
-    <title>ECC Building Trust</title>
+    <title>Keo Morokot Instruction</title>
 
      <!-- Chosen  -->
     <link rel="stylesheet" href="{{asset('chosen/chosen.css')}}">
@@ -109,9 +109,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/advertisement')}}"><i class="fa fa-bullhorn text-warning"></i> Advertisement </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/portfolio')}}"><i class="fa fa-picture-o text-info"></i> Portfolio </a>
-                    </li>
+                    </li> -->
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/company-feature')}}"><i class="fa fa-bullhorn text-success"></i> Company Feature </a>
                     </li> -->
